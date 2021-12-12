@@ -1,0 +1,158 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    max-width: 1440px; /* define a largura máxima do corpo do site */
+    margin: 0 auto;
+    font-size: 1.6rem;;
+}
+.cabecalho {
+    padding: 30px 15px; /* define para o cabeçalho um espaçamento de 30px superior e inferior e 15px na direita e na esquerda */
+    position: relative; /* permite posicionar os elementos da forma que for preciso*/    
+}
+.cabecalho .logo {
+    background: url(../images/logo.jpg) center center no-repeat; /* cria um quadrado para manter a logo centralizada no canto superior esquerdo da página.*/
+    width: 85px;
+    height: 85px;
+    display: inline-block; /* coloca a logo por baixo de h1*/ 
+}
+.cabecalho .logo h1 {
+    font-size: 0; /* colo h1 está por cima da imagem da logo, ele some com a fonte reduzida a 0 */
+}
+.cabecalho nav {
+    display: inline-block; /*coloca o cabeçalho paralelo com a imagem da logo*/
+    position: absolute; /* inicia a flutuação do elemento para posicioná-lo da melhor forma*/
+    right: 0; /* impulsiona o menu de navegação para a direita, o canto da tela*/
+    margin-top: 30px; /* centraliza junto com o logo, em virtude do height colocado pelo logo*/
+}
+.cabecalho ul li {
+    display: inline-block; /* coloca os elementos da lista de menu em uma única linha */
+    padding: 15px; /* coloca um espaçamento entre os elementos*/
+}
+.cabecalho ul li a:hover { /* essa propriedade é aplicada quando o cursor paira sobre o elemento*/
+    font-weight: bold;
+}
+
+/* Painel 1 */
+.painel {
+    background: url(../images/painel.jpg) center center no-repeat; /* centraliza a imagem horizontal e verticalmente no fundo da sessão, e não permite que ela repita */
+    height: 600px; /* no site do Figma, o height da imagem é de 628px. Aqui, foi arredondado para baixo. */
+}
+.painel h2 {
+    color: #fff; /* aqui muda a cor da letra*/
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center; /*aqui centraliza o texto na linha*/
+    position: relative; /* permite posicionar os elementos da forma que for preciso*/
+    top: 50%; permite o elemento se deslocar até a metade da section, pelo sentido vertical, a partir do topo
+    transform: translateY(-50%); /*enquanto o top "abaixa" o elemento, o transform faz o ajuste ideal pelo tamanho da section */
+}
+
+/* Section Quem Somos e Onde Estamos */
+.secao-com-texto {
+    padding: 153px; /* faz um espaçamento para todos os lados, centralizando o elemento*/
+    text-align: center; /* centraliza todos os elementos da section, seja imagem ou texto*/
+    clear: both; /* Dará espaço entre a seção do texto com a seção do ladrilho */
+}
+.secao-com-texto img {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 70px;
+}
+.secao-com-texto h2 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 37px;
+}
+.secao-com-texto p {
+    font-size: 18px;
+    width: 702px;
+    margin: 0 auto;
+}
+.secao-com-texto.onde-estamos p {
+    font-size: 28px;
+    width: 480px;
+}
+
+/* Os ladrilhos*/
+.ladrilho div {
+    float: left;
+}
+.ladrilho .grande {
+    background: url(../images/4.jpg) center center no-repeat; /*a imagem ainda não aparece no projeto*/
+    height: 600px;
+    width: 50%; /* o width é definido em porcentagem por que ocupa apenas metade da tela */
+}
+.ladrilho .pequeno {
+    background: url(../images/3.jpg) center center no-repeat;
+    height: 300px;
+    width: 25%;
+}
+.ladrilho .pequeno.grao {
+    background: url(../images/2.jpg) center center no-repeat;
+    height: 300px;
+    width: 25%;
+}
+.ladrilho .medio {
+    background: url(../images/1.jpg) top center no-repeat;
+    height: 600px;
+    width: 50%;
+    top: 50%;
+}
+
+/* Aqui se inicia a seção de contato*/
+.contato {
+    background: url(../images/fundo-contato.jpg) center center no-repeat;
+    color:#fff;
+    height: 600px;
+    position: relative; /* engloba toda a section para que, qualquer elemento-filho, caso seja movimentado, não saia de dentro do elemento-pai */
+}
+.contato h2 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contato address {
+    font-size: 25px;
+    font-weight: 600;
+}
+.contato .texto {
+    position: absolute;
+    top: 30%; /* desce 30% em relação ao topo*/
+    left: 50%; /* faz com que o elemento inicie no lado direito, depois da metade vertical da imagem*/
+}
+/* Rodapé*/
+.rodape {
+    background: url(../images/fundo-rodape.jpg) center center no-repeat;
+    padding: 35px 30px; /* espaçamento de 35 acima e abaixo e de 30 para os lados*/
+    background-size: cover; /* a imagem de fundo cobrirá toda a div, sem deixar espaços vagos*/
+}
+.rodape ul{
+    float: right;
+    margin-top: 30px;
+}
+.rodape ul li {
+    display: inline-block;
+    padding: 15px;
+}
+.rodape ul li a{
+    color:#fff;
+}
+.rodape ul li a:hover{
+    font-weight: bold;
+}
+.rodape .copyright {
+    color: #fff;
+}
+.rodape .redes-sociais .facebook, .rodape .redes-sociais .instagram{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+.rodape .redes-sociais {
+    float: right;
+    clear: both
+}
+.rodape .conteudo-de-baixo {
+    margin-top: 40px;
+}
